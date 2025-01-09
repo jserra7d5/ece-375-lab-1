@@ -1,0 +1,258 @@
+
+joseph_serra_lab1_part2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000001ca  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000176  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001ca  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000001fc  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  0000023c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000c3a  00000000  00000000  0000025c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000a46  00000000  00000000  00000e96  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000360  00000000  00000000  000018dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  00001c3c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000514  00000000  00000000  00001c60  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000001e4  00000000  00000000  00002174  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  00002358  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 56 00 	jmp	0xac	; 0xac <__ctors_end>
+   4:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+   8:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+   c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  10:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  14:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  18:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  1c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  20:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  24:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  28:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  2c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  30:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  34:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  38:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  3c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  40:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  44:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  48:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  4c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  50:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  54:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  58:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  5c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  60:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  64:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  68:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  6c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  70:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  74:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  78:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  7c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  80:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  84:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  88:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  8c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  90:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  94:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  98:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  9c:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  a0:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  a4:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+  a8:	0c 94 60 00 	jmp	0xc0	; 0xc0 <__bad_interrupt>
+
+000000ac <__ctors_end>:
+  ac:	11 24       	eor	r1, r1
+  ae:	1f be       	out	0x3f, r1	; 63
+  b0:	cf ef       	ldi	r28, 0xFF	; 255
+  b2:	da e0       	ldi	r29, 0x0A	; 10
+  b4:	de bf       	out	0x3e, r29	; 62
+  b6:	cd bf       	out	0x3d, r28	; 61
+  b8:	0e 94 62 00 	call	0xc4	; 0xc4 <main>
+  bc:	0c 94 b9 00 	jmp	0x172	; 0x172 <_exit>
+
+000000c0 <__bad_interrupt>:
+  c0:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000c4 <main>:
+#define LEFT_WHISKER (1 << 5) // shift the bit position by 4 to capture the left whisker input bit
+
+int main(void)
+{
+	// initialize port D for whisker inputs
+	DDRD = 0b00000000; // set all pins as inputs
+  c4:	1a b8       	out	0x0a, r1	; 10
+	PORTD = 0b11111111; // enable pullup resistors
+  c6:	8f ef       	ldi	r24, 0xFF	; 255
+  c8:	8b b9       	out	0x0b, r24	; 11
+
+	// initialize port B for motor outputs
+	DDRB = 0b11110000; // port B pin configuration
+  ca:	80 ef       	ldi	r24, 0xF0	; 240
+  cc:	84 b9       	out	0x04, r24	; 4
+	PORTB = 0b11110000; // set the motor outputs to not move initially
+  ce:	85 b9       	out	0x05, r24	; 5
+			_delay_ms(1000); // wait for one second
+			PORTB = 0b10010000; // resume moving forward
+		}
+
+		else {
+			PORTB = 0b10010000; // move forward
+  d0:	30 e9       	ldi	r19, 0x90	; 144
+		// only check left whisker input, active low
+		else if (!(whisker_state & LEFT_WHISKER)) {
+			// left whisker input is active
+			PORTB = 0b00000000; // move backward
+			_delay_ms(1000); // wait for one second
+			PORTB = 0b10000000;; // turn right
+  d2:	40 e8       	ldi	r20, 0x80	; 128
+		// only check right whisker input, active low
+		else if (!(whisker_state & RIGHT_WHISKER)) {
+			// right whisker input is active
+			PORTB = 0b00000000; // move backward
+			_delay_ms(1000); // wait for one second
+			PORTB = 0b00010000; // turn left
+  d4:	50 e1       	ldi	r21, 0x10	; 16
+	DDRB = 0b11110000; // port B pin configuration
+	PORTB = 0b11110000; // set the motor outputs to not move initially
+
+	while (1) // loop forever
+	{
+		uint8_t whisker_state = PIND; // grab the current state of port D's pins
+  d6:	89 b1       	in	r24, 0x09	; 9
+  d8:	28 2f       	mov	r18, r24
+  da:	20 71       	andi	r18, 0x10	; 16
+
+		// checking both whisker inputs, both active low
+		if (!(whisker_state & RIGHT_WHISKER) && !(whisker_state & LEFT_WHISKER)) {
+  dc:	98 2f       	mov	r25, r24
+  de:	90 73       	andi	r25, 0x30	; 48
+  e0:	b1 f4       	brne	.+44     	; 0x10e <main+0x4a>
+			// both whisker inputs are active
+			PORTB = 0b00000000; // move backward
+  e2:	15 b8       	out	0x05, r1	; 5
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  e4:	2f ef       	ldi	r18, 0xFF	; 255
+  e6:	83 ed       	ldi	r24, 0xD3	; 211
+  e8:	90 e3       	ldi	r25, 0x30	; 48
+  ea:	21 50       	subi	r18, 0x01	; 1
+  ec:	80 40       	sbci	r24, 0x00	; 0
+  ee:	90 40       	sbci	r25, 0x00	; 0
+  f0:	e1 f7       	brne	.-8      	; 0xea <main+0x26>
+  f2:	00 c0       	rjmp	.+0      	; 0xf4 <main+0x30>
+  f4:	00 00       	nop
+			_delay_ms(1000); // wait for one second
+			PORTB = 0b10000000;; // turn right
+  f6:	45 b9       	out	0x05, r20	; 5
+  f8:	2f ef       	ldi	r18, 0xFF	; 255
+  fa:	83 ed       	ldi	r24, 0xD3	; 211
+  fc:	90 e3       	ldi	r25, 0x30	; 48
+  fe:	21 50       	subi	r18, 0x01	; 1
+ 100:	80 40       	sbci	r24, 0x00	; 0
+ 102:	90 40       	sbci	r25, 0x00	; 0
+ 104:	e1 f7       	brne	.-8      	; 0xfe <main+0x3a>
+ 106:	00 c0       	rjmp	.+0      	; 0x108 <main+0x44>
+ 108:	00 00       	nop
+			_delay_ms(1000); // wait for one second
+			PORTB = 0b10010000; // resume moving forward
+ 10a:	35 b9       	out	0x05, r19	; 5
+ 10c:	e4 cf       	rjmp	.-56     	; 0xd6 <main+0x12>
+		}
+
+		// only check right whisker input, active low
+		else if (!(whisker_state & RIGHT_WHISKER)) {
+ 10e:	21 11       	cpse	r18, r1
+ 110:	16 c0       	rjmp	.+44     	; 0x13e <main+0x7a>
+			// right whisker input is active
+			PORTB = 0b00000000; // move backward
+ 112:	15 b8       	out	0x05, r1	; 5
+ 114:	2f ef       	ldi	r18, 0xFF	; 255
+ 116:	83 ed       	ldi	r24, 0xD3	; 211
+ 118:	90 e3       	ldi	r25, 0x30	; 48
+ 11a:	21 50       	subi	r18, 0x01	; 1
+ 11c:	80 40       	sbci	r24, 0x00	; 0
+ 11e:	90 40       	sbci	r25, 0x00	; 0
+ 120:	e1 f7       	brne	.-8      	; 0x11a <main+0x56>
+ 122:	00 c0       	rjmp	.+0      	; 0x124 <main+0x60>
+ 124:	00 00       	nop
+			_delay_ms(1000); // wait for one second
+			PORTB = 0b00010000; // turn left
+ 126:	55 b9       	out	0x05, r21	; 5
+ 128:	2f ef       	ldi	r18, 0xFF	; 255
+ 12a:	83 ed       	ldi	r24, 0xD3	; 211
+ 12c:	90 e3       	ldi	r25, 0x30	; 48
+ 12e:	21 50       	subi	r18, 0x01	; 1
+ 130:	80 40       	sbci	r24, 0x00	; 0
+ 132:	90 40       	sbci	r25, 0x00	; 0
+ 134:	e1 f7       	brne	.-8      	; 0x12e <main+0x6a>
+ 136:	00 c0       	rjmp	.+0      	; 0x138 <main+0x74>
+ 138:	00 00       	nop
+			_delay_ms(1000); // wait for one second
+			PORTB = 0b10010000; // resume moving forward
+ 13a:	35 b9       	out	0x05, r19	; 5
+ 13c:	cc cf       	rjmp	.-104    	; 0xd6 <main+0x12>
+		}
+
+		// only check left whisker input, active low
+		else if (!(whisker_state & LEFT_WHISKER)) {
+ 13e:	85 fd       	sbrc	r24, 5
+ 140:	16 c0       	rjmp	.+44     	; 0x16e <main+0xaa>
+			// left whisker input is active
+			PORTB = 0b00000000; // move backward
+ 142:	15 b8       	out	0x05, r1	; 5
+ 144:	2f ef       	ldi	r18, 0xFF	; 255
+ 146:	83 ed       	ldi	r24, 0xD3	; 211
+ 148:	90 e3       	ldi	r25, 0x30	; 48
+ 14a:	21 50       	subi	r18, 0x01	; 1
+ 14c:	80 40       	sbci	r24, 0x00	; 0
+ 14e:	90 40       	sbci	r25, 0x00	; 0
+ 150:	e1 f7       	brne	.-8      	; 0x14a <main+0x86>
+ 152:	00 c0       	rjmp	.+0      	; 0x154 <main+0x90>
+ 154:	00 00       	nop
+			_delay_ms(1000); // wait for one second
+			PORTB = 0b10000000;; // turn right
+ 156:	45 b9       	out	0x05, r20	; 5
+ 158:	2f ef       	ldi	r18, 0xFF	; 255
+ 15a:	83 ed       	ldi	r24, 0xD3	; 211
+ 15c:	90 e3       	ldi	r25, 0x30	; 48
+ 15e:	21 50       	subi	r18, 0x01	; 1
+ 160:	80 40       	sbci	r24, 0x00	; 0
+ 162:	90 40       	sbci	r25, 0x00	; 0
+ 164:	e1 f7       	brne	.-8      	; 0x15e <main+0x9a>
+ 166:	00 c0       	rjmp	.+0      	; 0x168 <main+0xa4>
+ 168:	00 00       	nop
+			_delay_ms(1000); // wait for one second
+			PORTB = 0b10010000; // resume moving forward
+ 16a:	35 b9       	out	0x05, r19	; 5
+ 16c:	b4 cf       	rjmp	.-152    	; 0xd6 <main+0x12>
+		}
+
+		else {
+			PORTB = 0b10010000; // move forward
+ 16e:	35 b9       	out	0x05, r19	; 5
+ 170:	b2 cf       	rjmp	.-156    	; 0xd6 <main+0x12>
+
+00000172 <_exit>:
+ 172:	f8 94       	cli
+
+00000174 <__stop_program>:
+ 174:	ff cf       	rjmp	.-2      	; 0x174 <__stop_program>
